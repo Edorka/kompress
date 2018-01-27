@@ -45,7 +45,7 @@ test('kompress should return "a2b2c" when "aabbc" is passed', (assert) => {
 });
 
 
-test('kompress should return "a2b2ca3" when "a2b2c" is passed', (assert) => {
+test('kompress should return "a2b2ca3" when "aabbcaaa" is passed', (assert) => {
     const actual = compress('aabbcaaa');
     const expected = 'a2b2ca3';
     assert.equal(actual, expected);
