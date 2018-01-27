@@ -1,0 +1,19 @@
+{
+  "name": "kompress",
+  "version": "0.0.1",
+  "description": "Small kata problem to learn TDD",
+  "main": "kompress.js",
+  "scripts": {
+    "test": "tape *.test.js | faucet"
+  },
+  "keywords": [
+    "compress",
+    "string"
+  ],
+  "author": "Eduardo Orive <edorka@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.8.0"
+  }
+}
