@@ -9,7 +9,7 @@ function accumulate(input, index, compress, count){
         /*ended*/
             compress + (count > 1  ? count  : '') + input.charAt(index) :
         /*match*/
-        compress.endsWith(input.charAt(index)) ?
+        compress.slice(-1) === input.charAt(index) ?
             accumulate(input, index + 1, compress, count + 1):
         /*no match*/
             accumulate(input, index + 1, compress + (count > 1  ? count  : '') + input.charAt(index), 1);
